@@ -38,5 +38,3 @@ app.post('/upload', upload.single('file'), (req, res) => {
     console.log(req.file);
     res.json({ message: 'File uploaded successfully', file: req.file });
 });
-
-app.listen(3000)
